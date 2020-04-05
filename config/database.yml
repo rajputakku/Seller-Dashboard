@@ -49,7 +49,7 @@ test:
 #
 production:
   <<: *default
-  url: <%= ENV['DATABASE_URL'] %>
-  # database: seller_dashboard_production
-  # username: seller_dashboard
-  # password: <%= ENV['SELLER_DASHBOARD_DATABASE_PASSWORD'] %>
+  # url: <%= ENV['DATABASE_URL'] %>
+  database: seller_dashboard_production
+  username: seller_dashboard
+  password: <%= ENV['SELLER_DASHBOARD_DATABASE_PASSWORD'] %>

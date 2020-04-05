@@ -1,5 +1,6 @@
 class Api::V1::ClientsController < ApplicationController
-	  skip_before_action :verify_authenticity_token
+	  # skip_before_action :verify_authenticity_token
+    before_action :authentication_user, only[:auth]
 
 def create
 	@client = Client.new(client_params)
