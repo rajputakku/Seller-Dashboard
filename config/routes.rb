@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   namespace :api do
   namespace :v1 do
-   resources :clients do
+   resources :clients, controller: 'clients' do
    	resources :clientusers, controller: 'client_users'
    end
    post 'auth/login', to: 'client_users#login'

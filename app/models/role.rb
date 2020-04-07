@@ -1,3 +1,3 @@
 class Role < ApplicationRecord
-	belongs_to :client_role
+	# belongs_to :client_role
 end
